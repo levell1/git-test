@@ -69,3 +69,24 @@ git reset --hard 가장최근의 commit한 상태로 돌아감
  git revert --no-commit (되돌릴  커밋 해시)
 원하는 다른 작업을 추가한 다음 함께 커밋
 취소하려면 git reset --hard
+
+
+Branch
+
+add-coach란 이름의 브랜치 생성
+git branch add-coach
+
+목록확인
+git branch
+
+add-coach 브랜치로 이동
+git switch add-coach
+
+브랜치 생성과 동시에 이동하기
+git switch -c new-teams
+
+브랜치 삭제하기
+git branch -d (삭제할 브랜치명)
+
+브랜치 이름 바꾸기
+git branch -m (기존 브랜치명) (새 브랜치명)
