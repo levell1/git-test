@@ -50,4 +50,22 @@ k 위로스크롤 j 아래로 스크롤 :q 끄기
 
 
 git commit -am "메세지"
-새로추가된 파일이 없을때 add, commit 을 동시에 
+새로추가된 파일이 없을때 add, commit 을 동시에
+
+Git에서 과거로 돌아가는 두 방식
+reset : 원하는 시점으로 돌아간 뒤 이후 내역들을 지웁니다.
+revert : 되돌리기 원하는 시점의 커밋을 거꾸로 실행합니다.
+
+아래 명령어로 커밋 내역 확인
+git log 로 커밋 내역 확인 해시확인
+
+git reset --hard (돌아갈 커밋 해시)
+
+백업 
+.git 폴더 복사 
+git reset --hard 가장최근의 commit한 상태로 돌아감
+
+ 커밋해버리지 않고 revert하기
+ git revert --no-commit (되돌릴  커밋 해시)
+원하는 다른 작업을 추가한 다음 함께 커밋
+취소하려면 git reset --hard
