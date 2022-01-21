@@ -42,8 +42,12 @@ Vi 입력 모드로 진입 - Vim 강좌
 아래로 스크롤	j	git log등에서 내역이 길 때 사용
 FIRST COMMIT 입력한 뒤 저장하고 종료
 
-:git diff
+git log
+확인 
+
+git diff
 k 위로스크롤 j 아래로 스크롤 :q 끄기
+
 
 git commit -am "메세지"
 새로추가된 파일이 없을때 add, commit 을 동시에 
