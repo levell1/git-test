@@ -1,46 +1,39 @@
-
 # 이렇게 #를 사용해서 주석
 .gitignore 깃에 포함하지 않을 자료들
-
-# 모든 file.c
-file.c
-
-# 최상위 폴더의 file.c
-/file.c
-
-# 모든 .c 확장자 파일
-*.c
-
-# .c 확장자지만 무시하지 않을 파일
-!not_ignore_this.c
-
-# logs란 이름의 파일 또는 폴더와 그 내용들
-logs
-
-# logs란 이름의 폴더와 그 내용들
-logs/
-
-# logs 폴더 바로 안의 debug.log와 .c 파일들
-logs/debug.log
-logs/*.c
-
-# logs 폴더 바로 안, 또는 그 안의 다른 폴더(들) 안의 debug.log
-logs/**/debug.log
-
+    # 모든 file.c
+    file.c
+    # 최상위 폴더의 file.c
+    /file.c
+    # 모든 .c 확장자 파일
+    *.c
+    # .c 확장자지만 무시하지 않을 파일
+    !not_ignore_this.c
+    # logs란 이름의 파일 또는 폴더와 그 내용들
+    logs
+    # logs란 이름의 폴더와 그 내용들
+    logs/
+    # logs 폴더 바로 안의 debug.log와 .c 파일들
+    logs/debug.log
+    logs/*.c
+    # logs 폴더 바로 안, 또는 그 안의 다른 폴더(들) 안의 debug.log
+    logs/**/debug.log
+]
 
 
 아래 명령어로 commit 이후
-Vi 입력 모드로 진입 - Vim 강좌
-작업	Vi 명령어	상세
+git commit
+    Vi 입력 모드로 진입 - Vim 강좌
+    작업	Vi 명령어	상세
 
-입력 시작	i	명령어 입력 모드에서 텍스트 입력 모드로 전환
-입력 종료	ESC	텍스트 입력 모드에서 명령어 입력 모드로 전환
-저장 없이 종료	:q	
-저장 없이 강제 종료	:q!	입력한 것이 있을 때 사용
-저장하고 종료	:wq	입력한 것이 있을 때 사용
-위로 스크롤	k	git log등에서 내역이 길 때 사용
-아래로 스크롤	j	git log등에서 내역이 길 때 사용
-FIRST COMMIT 입력한 뒤 저장하고 종료
+    입력 시작	i	명령어 입력 모드에서 텍스트 입력 모드로 전환
+    입력 종료	ESC	텍스트 입력 모드에서 명령어 입력 모드로 전환
+    저장 없이 종료	:q	
+    저장 없이 강제 종료	:q!	입력한 것이 있을 때 사용
+    저장하고 종료	:wq	입력한 것이 있을 때 사용
+    위로 스크롤	k	git log등에서 내역이 길 때 사용
+    아래로 스크롤	j	git log등에서 내역이 길 때 사용
+    FIRST COMMIT 입력한 뒤 저장하고 종료
+]
 
 git log
 확인 
@@ -48,9 +41,8 @@ git log
 git diff
 k 위로스크롤 j 아래로 스크롤 :q 끄기
 
-
 git commit -am "메세지"
-새로추가된 파일이 없을때 add, commit 을 동시에
+(새로추가된 파일이 없을때) add, commit 을 동시에
 
 Git에서 과거로 돌아가는 두 방식
 reset : 원하는 시점으로 돌아간 뒤 이후 내역들을 지웁니다.
@@ -106,4 +98,25 @@ git merge conflict-1로 병합을 시도하면 충돌 발생
 오류 해결 후 add ., commit
 해결이 어려우면 git merge --abort 로 중단
 
-rebase 충돌 해결하기
+
+Git Hub 
+my token : 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
+검색 자격 증명 관리 -> 깃허브 아디, 비번 -> 토큰
+
+협업할 팀원 추가
+레포지토리의 Settings - Manage access
+Add people
+
+로컬에 원격 저장소 추가 후 푸시
+git remote add origin (원격 저장소 주소) //원격 저장소로의 연결 추가
+git branch -M main                      //GitHub 권장 - 기본 브랜치명을 main으로
+git push -u origin main                 // 로컬 저장소의 커밋 내역들 원격으로 push(업로드)
+
+
+GitHub에서 프로젝트 다운받기
+Download ZIP: 파일들만 다운받음, Git 관리내역 제외
+Git clone: Git 관리내역 포함 다운로드
+
+터미널이나 Git Bash에서 대상 폴더 이동 후
+git clone (원격 저장소 주소)
+VS Code로 해당 폴더 열어보기
