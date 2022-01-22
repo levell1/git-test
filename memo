@@ -100,3 +100,7 @@ git rebase main
 master로 이동
 git merge new-teams
 new-teams 삭제  git branch -d new-teams
+
+merge 충돌 해결하기
+
+git merge --abort
