@@ -102,5 +102,8 @@ git merge new-teams
 new-teams 삭제  git branch -d new-teams
 
 merge 충돌 해결하기
+git merge conflict-1로 병합을 시도하면 충돌 발생
+오류 해결 후 add ., commit
+해결이 어려우면 git merge --abort 로 중단
 
-git merge --abort
+rebase 충돌 해결하기
