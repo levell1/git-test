@@ -69,3 +69,22 @@ git reset --hard 가장최근의 commit한 상태로 돌아감
  git revert --no-commit (되돌릴  커밋 해시)
 원하는 다른 작업을 추가한 다음 함께 커밋
 취소하려면 git reset --hard
+
+깃 브런츠 이동
+git switch (add-coach)
+
+깃 브렌치 생성,이동
+git switch -c (new-teams)
+
+깃로그 브렌치 다 확인
+git log --all --decorate --oneline --graph
+
+서로 다른 브랜치를 합치는 두 방식
+merge : 두 브랜치를 한 커밋에 이어붙입니다.
+
+브랜치 사용내역을 남길 필요가 있을 때 적합한 방식입니다.
+다른 형태의 merge에 대해서도 이후 다루게 될 것입니다.
+rebase : 브랜치를 다른 브랜치에 이어붙입니다.
+
+한 줄로 깔끔히 정리된 내역을 유지하기 원할 때 적합합니다.
+이미 팀원과 공유된 커밋들에 대해서는 사용하지 않는 것이 좋습니다.
