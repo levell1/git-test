@@ -65,11 +65,13 @@ git reset --hard (돌아갈 커밋 해시)
 .git 폴더 복사 
 git reset --hard 가장최근의 commit한 상태로 돌아감
 
- 커밋해버리지 않고 revert하기
- git revert --no-commit (되돌릴  커밋 해시)
+커밋해버리지 않고 revert하기
+git revert --no-commit (되돌릴  커밋 해시)
 원하는 다른 작업을 추가한 다음 함께 커밋
 취소하려면 git reset --hard
 
+브런치 생성
+git branch (이름)
 깃 브런츠 이동
 git switch (add-coach)
 
