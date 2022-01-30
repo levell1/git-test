@@ -1,3 +1,7 @@
+https://www.yalco.kr/lectures/git-github/
+git remote add origin (원격 저장소 주소) 
+
+
 # 이렇게 #를 사용해서 주석
 .gitignore 깃에 포함하지 않을 자료들
     # 모든 file.c
